@@ -1,0 +1,37 @@
+.form {
+  width: 100%;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 var(--space-5);
+}
+
+@media (max-width: 768px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.success {
+  text-align: center;
+  padding: var(--space-9) var(--space-6);
+}
+
+.successIcon {
+  font-size: 3rem;
+  color: var(--success);
+  margin-bottom: var(--space-5);
+}
+
+.success h3 {
+  font-size: var(--text-h2);
+  margin-bottom: var(--space-4);
+}
+
+.success p {
+  color: var(--gray-500);
+  margin-bottom: var(--space-6);
+  font-size: var(--text-body-lg);
+}

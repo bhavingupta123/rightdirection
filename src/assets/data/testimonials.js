@@ -1,0 +1,58 @@
+const testimonials = [
+  {
+    id: 1,
+    name: 'Rajesh Sharma',
+    role: 'Founder & CEO',
+    company: 'TechNova Solutions',
+    city: 'Mumbai',
+    quote: 'RightDirection transformed our online presence completely. Our organic traffic grew by 400% in just 6 months. Their understanding of the Indian market is unmatched.',
+    rating: 5,
+  },
+  {
+    id: 2,
+    name: 'Priya Patel',
+    role: 'Marketing Director',
+    company: 'GreenLeaf Organics',
+    city: 'Ahmedabad',
+    quote: 'The team at RightDirection delivered exceptional results for our social media campaigns. Our Instagram following went from 5K to 100K in 8 months!',
+    rating: 5,
+  },
+  {
+    id: 3,
+    name: 'Arjun Mehta',
+    role: 'Co-founder',
+    company: 'UrbanStyle Fashion',
+    city: 'Delhi',
+    quote: 'Their PPC expertise helped us achieve a 6.5x ROAS on Google Ads. Best digital marketing investment we have ever made.',
+    rating: 5,
+  },
+  {
+    id: 4,
+    name: 'Sneha Reddy',
+    role: 'Head of Digital',
+    company: 'FreshBite Foods',
+    city: 'Bangalore',
+    quote: 'From website redesign to full-funnel content marketing, RightDirection has been an incredible partner for our growth journey.',
+    rating: 5,
+  },
+  {
+    id: 5,
+    name: 'Vikram Singh',
+    role: 'Managing Director',
+    company: 'BuildCraft Properties',
+    city: 'Pune',
+    quote: 'Our lead generation through Google Ads tripled within the first quarter. The team truly understands real estate marketing in India.',
+    rating: 5,
+  },
+  {
+    id: 6,
+    name: 'Ananya Krishnan',
+    role: 'CEO',
+    company: 'EduPro Academy',
+    city: 'Hyderabad',
+    quote: 'The video marketing campaigns RightDirection created helped us reach 50M views on YouTube. They truly understand the Indian education market.',
+    rating: 5,
+  },
+];
+
+export default testimonials;

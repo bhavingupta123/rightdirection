@@ -1,0 +1,90 @@
+.section {
+  padding: var(--space-11) 0;
+  background: var(--gray-50);
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--space-5);
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.navBtn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid var(--gray-200);
+  color: var(--gray-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.navBtn:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.cardWrap {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  min-height: 320px;
+}
+
+.cardMotion {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-2);
+  margin-top: var(--space-7);
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gray-300);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all var(--transition-fast);
+}
+
+.activeDot {
+  background: var(--primary);
+  width: 30px;
+  border-radius: var(--radius-full);
+}
+
+@media (max-width: 768px) {
+  .navBtn {
+    display: none;
+  }
+
+  .carousel {
+    max-width: 100%;
+  }
+
+  .cardWrap {
+    min-height: 380px;
+  }
+}

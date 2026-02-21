@@ -1,0 +1,79 @@
+.header {
+  margin-bottom: var(--space-9);
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.subtitle {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: var(--text-small);
+  font-weight: 600;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-3);
+  position: relative;
+  padding-left: 2rem;
+}
+
+.subtitle::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.25rem;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+.center .subtitle {
+  padding-left: 0;
+  padding-top: 1.5rem;
+}
+
+.center .subtitle::before {
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 2.5rem;
+}
+
+.title {
+  font-size: var(--text-h2);
+  margin-bottom: var(--space-4);
+  line-height: 1.2;
+}
+
+.description {
+  font-size: var(--text-body-lg);
+  color: var(--gray-500);
+  max-width: 600px;
+  margin-bottom: 0;
+}
+
+.center .description {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Light theme for dark backgrounds */
+.light .subtitle {
+  color: var(--accent);
+}
+
+.light .title {
+  color: white;
+}
+
+.light .description {
+  color: rgba(255, 255, 255, 0.7);
+}

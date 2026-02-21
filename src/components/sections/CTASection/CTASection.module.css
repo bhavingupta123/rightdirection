@@ -1,0 +1,89 @@
+.section {
+  background: var(--gradient-blue);
+  padding: var(--space-11) 0;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.bgDecor {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.circle1 {
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.circle2 {
+  position: absolute;
+  bottom: -120px;
+  left: -80px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.circle3 {
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(255, 107, 53, 0.08);
+  filter: blur(40px);
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.container {
+  max-width: var(--container-narrow);
+  margin: 0 auto;
+  padding: 0 var(--space-5);
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-size: var(--text-h1);
+  color: white;
+  margin-bottom: var(--space-5);
+}
+
+.subtitle {
+  font-size: var(--text-body-lg);
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: var(--space-8);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .actions {
+    flex-direction: column;
+    align-items: center;
+  }
+}
